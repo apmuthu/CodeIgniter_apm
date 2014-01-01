@@ -7,7 +7,7 @@
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://www.codeigniter.com/user_guide/license.html
  * @link		http://www.codeigniter.com
  * @since		Version 1.0
@@ -23,7 +23,7 @@
  * @category	Loader
  * @link		http://www.codeigniter.com/user_guide/libraries/javascript.html
  */
- 
+
 class CI_Jquery extends CI_Javascript {
 
 	var $_javascript_folder = 'js';
@@ -36,18 +36,18 @@ class CI_Jquery extends CI_Javascript {
 
 	public function __construct($params)
 	{
-		$this->CI =& get_instance();	
+		$this->CI =& get_instance();
 		extract($params);
 
 		if ($autoload === TRUE)
 		{
-			$this->script();			
+			$this->script();
 		}
-		
+
 		log_message('debug', "Jquery Class Initialized");
 	}
-	
-	// --------------------------------------------------------------------	 
+
+	// --------------------------------------------------------------------
 	// Event Code
 	// --------------------------------------------------------------------	
 
