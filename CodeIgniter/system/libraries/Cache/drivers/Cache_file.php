@@ -2,7 +2,7 @@
 /**
  * CodeIgniter
  *
- * An open source application development framework for PHP 4.3.2 or newer
+ * An open source application development framework for PHP 5.1.6 or newer
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
@@ -76,7 +76,7 @@ class CI_Cache_file extends CI_Driver {
 	 *
 	 * @param 	string		unique key
 	 * @param 	mixed		data to store
-	 * @param 	int		length of time (in seconds) the cache is valid 
+	 * @param 	int		length of time (in seconds) the cache is valid
 	 *					- Default is 60 seconds
 	 * @return 	boolean		true on success/false on failure
 	 */
