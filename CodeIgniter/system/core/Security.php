@@ -289,7 +289,6 @@ class CI_Security {
 		 * <a href="http://%77%77%77%2E%67%6F%6F%67%6C%65%2E%63%6F%6D">Google</a>
 		 *
 		 * Note: Use rawurldecode() so it does not remove plus signs
-		 *
 		 */
 		do
 		{
@@ -303,7 +302,6 @@ class CI_Security {
 		 * This permits our tests below to work reliably.
 		 * We only convert entities that are within tags since
 		 * these are the ones that will pose security problems.
-		 *
 		 */
 		$str = preg_replace_callback("/[^a-z0-9>]+[a-z0-9]+=([\'\"]).*?\\1/si", array($this, '_convert_attribute'), $str);
 		$str = preg_replace_callback('/<\w+.*/si', array($this, '_decode_entity'), $str);

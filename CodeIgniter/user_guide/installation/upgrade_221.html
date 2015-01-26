@@ -3,7 +3,7 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Inflector Helper : CodeIgniter User Guide</title>
+<title>Upgrading from 2.1.3 to 2.1.4 : CodeIgniter User Guide</title>
 
 <style type='text/css' media='all'>@import url('../userguide.css');</style>
 <link rel='stylesheet' type='text/css' media='all' href='../userguide.css' />
@@ -42,7 +42,7 @@
 <td id="breadcrumb">
 <a href="http://codeigniter.com/">CodeIgniter Home</a> &nbsp;&#8250;&nbsp;
 <a href="../index.html">User Guide Home</a> &nbsp;&#8250;&nbsp;
-Inflector Helper
+Upgrading from 2.2.0 to 2.2.1
 </td>
 <td id="searchbox"><form method="get" action="http://www.google.com/search"><input type="hidden" name="as_sitesearch" id="as_sitesearch" value="codeigniter.com/user_guide/" />Search User Guide&nbsp; <input type="text" class="input" style="width:200px;" name="q" id="q" size="31" maxlength="255" value="" />&nbsp;<input type="submit" class="submit" name="sa" value="Go" /></form></td>
 </tr>
@@ -55,82 +55,15 @@ Inflector Helper
 <!-- START CONTENT -->
 <div id="content">
 
+<h1>Upgrading from 2.2.0 to 2.2.1</h1>
 
-<h1>Inflector Helper</h1>
+<p>Before performing an update you should take your site offline by replacing the index.php file with a static one.</p>
 
-<p>The Inflector Helper file contains functions that permits you to change words to plural, singular, camel case, etc.</p>
+<h2>Step 1: Update your CodeIgniter files</h2>
 
+<p>Replace all files and directories in your "system" folder and replace your index.php file. If any modifications were made to your index.php they will need to be made fresh in this new one.</p>
 
-<h2>Loading this Helper</h2>
-
-<p>This helper is loaded using the following code:</p>
-<code>$this->load->helper('inflector');</code>
-
-<p>The following functions are available:</p>
-
-
-<h2>singular()</h2>
-
-<p>Changes a plural word to singular.  Example:</p>
-
-<code>
-$word = "dogs";<br />
-echo singular($word); // Returns "dog"
-</code>
-
-
-<h2>plural()</h2>
-
-<p>Changes a singular word to plural.  Example:</p>
-
-<code>
-$word = "dog";<br />
-echo plural($word); // Returns "dogs"
-</code>
-
-
-<p>To force a word to end with &quot;es&quot; use a second &quot;true&quot; argument. </p>
-<code> $word = &quot;pass&quot;;<br />
-echo plural($word, TRUE); // Returns &quot;passes&quot; </code>
-
-<h2>camelize()</h2>
-<p>Changes a string of words separated by spaces or underscores to camel case.  Example:</p>
-
-<code>
-$word = "my_dog_spot";<br />
-echo camelize($word); // Returns "myDogSpot"
-</code>
-
-
-<h2>underscore()</h2>
-
-<p>Takes multiple words separated by spaces and underscores them.  Example:</p>
-
-<code>
-$word = "my dog spot";<br />
-echo underscore($word); // Returns "my_dog_spot"
-</code>
-
-
-<h2>humanize()</h2>
-
-<p>Takes multiple words separated by underscores and adds spaces between them.  Each word is capitalized. Example:</p>
-
-<code>
-$word = "my_dog_spot";<br />
-echo humanize($word); // Returns "My Dog Spot"
-</code>
-
-
-
-
-
-
-
-
-
-
-
+<p class="important"><strong>Note:</strong> If you have any custom developed files in these folders please make copies of them first.</p>
 
 </div>
 <!-- END CONTENT -->
@@ -138,11 +71,11 @@ echo humanize($word); // Returns "My Dog Spot"
 
 <div id="footer">
 <p>
-Previous Topic:&nbsp;&nbsp;<a href="html_helper.html"> HTML Helper</a>
+Previous Topic:&nbsp;&nbsp;<a href="index.html">Installation Instructions</a>
 &nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
 <a href="#top">Top of Page</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
 <a href="../index.html">User Guide Home</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-Next Topic:&nbsp;&nbsp;<a href="number_helper.html">Number Helper</a>
+Next Topic:&nbsp;&nbsp;<a href="troubleshooting.html">Troubleshooting</a>
 </p>
 <p><a href="http://codeigniter.com">CodeIgniter</a> &nbsp;&middot;&nbsp; Copyright &#169; 2006 - 2014 &nbsp;&middot;&nbsp; <a href="http://ellislab.com/">EllisLab, Inc.</a> &nbsp;&middot;&nbsp; Copyright &#169; 2014 - 2015 &nbsp;&middot;&nbsp; <a href="http://bcit.ca/">British Columbia Institute of Technology</a></p>
 </div>
