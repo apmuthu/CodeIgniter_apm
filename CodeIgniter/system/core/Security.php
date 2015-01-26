@@ -1,4 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
  * CodeIgniter
  *
@@ -293,7 +293,6 @@ class CI_Security {
 		 * <a href="http://%77%77%77%2E%67%6F%6F%67%6C%65%2E%63%6F%6D">Google</a>
 		 *
 		 * Note: Use rawurldecode() so it does not remove plus signs
-		 *
 		 */
 		$str = rawurldecode($str);
 
@@ -303,7 +302,6 @@ class CI_Security {
 		 * This permits our tests below to work reliably.
 		 * We only convert entities that are within tags since
 		 * these are the ones that will pose security problems.
-		 *
 		 */
 
 		$str = preg_replace_callback("/[a-z]+=([\'\"]).*?\\1/si", array($this, '_convert_attribute'), $str);
@@ -872,4 +870,4 @@ class CI_Security {
 }
 
 /* End of file Security.php */
-/* Location: ./system/libraries/Security.php */
+/* Location: ./system/core/Security.php */
